@@ -1,5 +1,3 @@
-
-App · JS
 const express = require('express');
 const cors = require('cors');
  
@@ -467,8 +465,8 @@ app.get('/', (req, res) => {
 // Iniciar servidor
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`🎉 Servidor rodando em http://localhost:${PORT}`);
-  console.log(`📊 Teste: http://localhost:${PORT}/api/consulta/05390824903`);
+  console.log(`Servidor rodando em http://localhost:${PORT}`);
+  console.log(`Teste: http://localhost:${PORT}/api/consulta/05390824903`);
 });
  
 
