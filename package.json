@@ -1,0 +1,29 @@
+{
+  "name": "serasa-kyc-mock",
+  "version": "1.0.0",
+  "description": "API Mock para Serasa/Pipefy",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "api",
+    "mock",
+    "serasa",
+    "apipefy",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
