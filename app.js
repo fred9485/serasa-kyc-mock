@@ -200,7 +200,18 @@ app.get('/api/consulta/:cpf', (req, res) => {
   const { cpf } = req.params;
  
   // Simula delay de processamento (450ms como uma bureau real)
-   
+  setTimeout(() => {
+    const response = {
+      ...bureauData,
+      query: {
+        ...bureauData.query,
+        cpf_queried: cpf
+      }
+    };
+    res.json(response);
+  }, 10);
+});
+ 
 // Endpoint: Health check
 app.get('/', (req, res) => {
   res.json({
