@@ -209,7 +209,7 @@ app.get('/api/consulta/:cpf', (req, res) => {
       }
     };
     res.json(response);
-  }, 10);
+  }, 0);
 });
  
 // Endpoint: Health check
